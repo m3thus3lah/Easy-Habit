@@ -1,0 +1,983 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5964583B10E4F611C23892F6 /* Pods_Easy_Habit_Easy_HabitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD4AA751956D2399BED6AEE /* Pods_Easy_Habit_Easy_HabitUITests.framework */; };
+		891388D627A1642400E18767 /* JournalCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891388D527A1642400E18767 /* JournalCreateViewController.swift */; };
+		891AC8A227A441A2001ECD15 /* JournalEntry+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891AC89C27A441A2001ECD15 /* JournalEntry+CoreDataClass.swift */; };
+		891AC8A327A441A2001ECD15 /* JournalEntry+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891AC89D27A441A2001ECD15 /* JournalEntry+CoreDataProperties.swift */; };
+		891AC8A427A441A2001ECD15 /* Habit+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891AC89E27A441A2001ECD15 /* Habit+CoreDataClass.swift */; };
+		891AC8A527A441A2001ECD15 /* Habit+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891AC89F27A441A2001ECD15 /* Habit+CoreDataProperties.swift */; };
+		891AC8A627A441A2001ECD15 /* DailyMoodEntry+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891AC8A027A441A2001ECD15 /* DailyMoodEntry+CoreDataClass.swift */; };
+		891AC8A727A441A2001ECD15 /* DailyMoodEntry+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891AC8A127A441A2001ECD15 /* DailyMoodEntry+CoreDataProperties.swift */; };
+		89281481279FC3DE00C130D7 /* GalleryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89281480279FC3DE00C130D7 /* GalleryDetailViewController.swift */; };
+		893E0B2C27A2DE5100DF5980 /* HabitChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893E0B2B27A2DE5100DF5980 /* HabitChoiceViewController.swift */; };
+		893E0B3F27A2E84100DF5980 /* HabitChoiceCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893E0B3D27A2E84100DF5980 /* HabitChoiceCVCell.swift */; };
+		893E0B4027A2E84100DF5980 /* HabitChoiceCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 893E0B3E27A2E84100DF5980 /* HabitChoiceCVCell.xib */; };
+		893E0B4B27A30CB100DF5980 /* HabitAddEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893E0B4A27A30CB100DF5980 /* HabitAddEditVC.swift */; };
+		89553FCA27A00E5700385CD4 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89553FC927A00E5700385CD4 /* NewsViewController.swift */; };
+		89553FCF27A00EF600385CD4 /* NewsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89553FCE27A00EF600385CD4 /* NewsDetailViewController.swift */; };
+		89553FD427A0148200385CD4 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89553FD327A0148200385CD4 /* APICaller.swift */; };
+		89553FE527A0180A00385CD4 /* NewsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89553FE327A0180A00385CD4 /* NewsTVCell.swift */; };
+		89553FE627A0180A00385CD4 /* NewsTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89553FE427A0180A00385CD4 /* NewsTVCell.xib */; };
+		89553FEC27A0218500385CD4 /* NewsCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89553FEA27A0218500385CD4 /* NewsCVCell.swift */; };
+		89553FED27A0218500385CD4 /* NewsCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89553FEB27A0218500385CD4 /* NewsCVCell.xib */; };
+		896B6761279ECDED0071B2CE /* HabitList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896B6760279ECDED0071B2CE /* HabitList.storyboard */; };
+		896B6766279ECE3B0071B2CE /* Journal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896B6765279ECE3B0071B2CE /* Journal.storyboard */; };
+		896B676B279ECE460071B2CE /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896B676A279ECE460071B2CE /* News.storyboard */; };
+		896B6770279ECED50071B2CE /* Gallery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896B676F279ECED50071B2CE /* Gallery.storyboard */; };
+		896B677B279EF2760071B2CE /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896B677A279EF2760071B2CE /* GalleryViewController.swift */; };
+		896B6787279EF5110071B2CE /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896B6785279EF5110071B2CE /* GalleryCollectionViewCell.swift */; };
+		896B6788279EF5110071B2CE /* GalleryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 896B6786279EF5110071B2CE /* GalleryCollectionViewCell.xib */; };
+		896B6790279EFF7A0071B2CE /* HabitListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896B678F279EFF7A0071B2CE /* HabitListViewController.swift */; };
+		8971B0D627A6DDDC009E2BE9 /* GalleryFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8971B0D527A6DDDC009E2BE9 /* GalleryFilterViewController.swift */; };
+		8971B0DE27A71A46009E2BE9 /* JournalFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8971B0DD27A71A46009E2BE9 /* JournalFilterViewController.swift */; };
+		897565AA279AF15300F92C76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897565A9279AF15300F92C76 /* AppDelegate.swift */; };
+		897565AC279AF15300F92C76 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897565AB279AF15300F92C76 /* SceneDelegate.swift */; };
+		897565B1279AF15400F92C76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 897565AF279AF15400F92C76 /* Main.storyboard */; };
+		897565B4279AF15400F92C76 /* Easy_Habit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 897565B2279AF15400F92C76 /* Easy_Habit.xcdatamodeld */; };
+		897565B6279AF15700F92C76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 897565B5279AF15700F92C76 /* Assets.xcassets */; };
+		897565B9279AF15700F92C76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 897565B7279AF15700F92C76 /* LaunchScreen.storyboard */; };
+		897565C4279AF15700F92C76 /* Easy_HabitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897565C3279AF15700F92C76 /* Easy_HabitTests.swift */; };
+		897565CF279AF15700F92C76 /* Easy_HabitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897565CE279AF15700F92C76 /* Easy_HabitUITests.swift */; };
+		897A3CFF279D86090032AD78 /* LocalFilesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897A3CFE279D86090032AD78 /* LocalFilesManager.swift */; };
+		897A3D04279DA57F0032AD78 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897A3D03279DA57F0032AD78 /* CoreDataManager.swift */; };
+		8983E10B279E85D20033B76F /* UserInputValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8983E10A279E85D20033B76F /* UserInputValidator.swift */; };
+		8984DB83279C019200A92841 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984DB82279C019200A92841 /* UserInfoViewController.swift */; };
+		8984DB90279C141200A92841 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984DB8F279C141200A92841 /* Model.swift */; };
+		8984DBAD279C96F900A92841 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984DBAC279C96F900A92841 /* UserDefaultsManager.swift */; };
+		8984DBBB279C9F5600A92841 /* DayMood.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8984DBBA279C9F5600A92841 /* DayMood.storyboard */; };
+		8984DBC3279CABF400A92841 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984DBC2279CABF400A92841 /* Utils.swift */; };
+		8984DBC8279CB60C00A92841 /* DayMoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984DBC7279CB60C00A92841 /* DayMoodViewController.swift */; };
+		89B5856527A12F6A00002148 /* JournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B5856427A12F6A00002148 /* JournalViewController.swift */; };
+		89B5857127A13ACD00002148 /* JournalDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B5857027A13ACD00002148 /* JournalDetailViewController.swift */; };
+		89B5858327A1442800002148 /* JournalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B5858127A1442800002148 /* JournalCollectionViewCell.swift */; };
+		89B5858427A1442800002148 /* JournalCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89B5858227A1442800002148 /* JournalCollectionViewCell.xib */; };
+		C11478D8BB557FBF7142D28D /* Pods_Easy_HabitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9718EEBCFA61BA841B338AF6 /* Pods_Easy_HabitTests.framework */; };
+		DF325CB6CA93438AF4570972 /* Pods_Easy_Habit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F65A938A57A2D541B05534F9 /* Pods_Easy_Habit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		897565C0279AF15700F92C76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8975659E279AF15300F92C76 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 897565A5279AF15300F92C76;
+			remoteInfo = "Easy Habit";
+		};
+		897565CB279AF15700F92C76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8975659E279AF15300F92C76 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 897565A5279AF15300F92C76;
+			remoteInfo = "Easy Habit";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0054D388C547A522D8A39950 /* Pods-Easy HabitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easy HabitTests.release.xcconfig"; path = "Target Support Files/Pods-Easy HabitTests/Pods-Easy HabitTests.release.xcconfig"; sourceTree = "<group>"; };
+		15726908CAB9898951460943 /* Pods-Easy HabitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easy HabitTests.debug.xcconfig"; path = "Target Support Files/Pods-Easy HabitTests/Pods-Easy HabitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		40609180661F7485271010C9 /* Pods-Easy Habit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easy Habit.release.xcconfig"; path = "Target Support Files/Pods-Easy Habit/Pods-Easy Habit.release.xcconfig"; sourceTree = "<group>"; };
+		6FD4AA751956D2399BED6AEE /* Pods_Easy_Habit_Easy_HabitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Easy_Habit_Easy_HabitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		891388D527A1642400E18767 /* JournalCreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalCreateViewController.swift; sourceTree = "<group>"; };
+		891AC89C27A441A2001ECD15 /* JournalEntry+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JournalEntry+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		891AC89D27A441A2001ECD15 /* JournalEntry+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JournalEntry+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		891AC89E27A441A2001ECD15 /* Habit+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Habit+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		891AC89F27A441A2001ECD15 /* Habit+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Habit+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		891AC8A027A441A2001ECD15 /* DailyMoodEntry+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DailyMoodEntry+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		891AC8A127A441A2001ECD15 /* DailyMoodEntry+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DailyMoodEntry+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		89281480279FC3DE00C130D7 /* GalleryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryDetailViewController.swift; sourceTree = "<group>"; };
+		893E0B2B27A2DE5100DF5980 /* HabitChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitChoiceViewController.swift; sourceTree = "<group>"; };
+		893E0B3D27A2E84100DF5980 /* HabitChoiceCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitChoiceCVCell.swift; sourceTree = "<group>"; };
+		893E0B3E27A2E84100DF5980 /* HabitChoiceCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HabitChoiceCVCell.xib; sourceTree = "<group>"; };
+		893E0B4A27A30CB100DF5980 /* HabitAddEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitAddEditVC.swift; sourceTree = "<group>"; };
+		89553FC927A00E5700385CD4 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		89553FCE27A00EF600385CD4 /* NewsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailViewController.swift; sourceTree = "<group>"; };
+		89553FD327A0148200385CD4 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		89553FE327A0180A00385CD4 /* NewsTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTVCell.swift; sourceTree = "<group>"; };
+		89553FE427A0180A00385CD4 /* NewsTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTVCell.xib; sourceTree = "<group>"; };
+		89553FEA27A0218500385CD4 /* NewsCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCVCell.swift; sourceTree = "<group>"; };
+		89553FEB27A0218500385CD4 /* NewsCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCVCell.xib; sourceTree = "<group>"; };
+		896B6760279ECDED0071B2CE /* HabitList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HabitList.storyboard; sourceTree = "<group>"; };
+		896B6765279ECE3B0071B2CE /* Journal.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Journal.storyboard; sourceTree = "<group>"; };
+		896B676A279ECE460071B2CE /* News.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
+		896B676F279ECED50071B2CE /* Gallery.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Gallery.storyboard; sourceTree = "<group>"; };
+		896B677A279EF2760071B2CE /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		896B6785279EF5110071B2CE /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
+		896B6786279EF5110071B2CE /* GalleryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GalleryCollectionViewCell.xib; sourceTree = "<group>"; };
+		896B678F279EFF7A0071B2CE /* HabitListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitListViewController.swift; sourceTree = "<group>"; };
+		8971B0D527A6DDDC009E2BE9 /* GalleryFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryFilterViewController.swift; sourceTree = "<group>"; };
+		8971B0DD27A71A46009E2BE9 /* JournalFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalFilterViewController.swift; sourceTree = "<group>"; };
+		897565A6279AF15300F92C76 /* Easy Habit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Easy Habit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		897565A9279AF15300F92C76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		897565AB279AF15300F92C76 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		897565B0279AF15400F92C76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		897565B3279AF15400F92C76 /* Easy_Habit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Easy_Habit.xcdatamodel; sourceTree = "<group>"; };
+		897565B5279AF15700F92C76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		897565B8279AF15700F92C76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		897565BA279AF15700F92C76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		897565BF279AF15700F92C76 /* Easy HabitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Easy HabitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		897565C3279AF15700F92C76 /* Easy_HabitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Easy_HabitTests.swift; sourceTree = "<group>"; };
+		897565C5279AF15700F92C76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		897565CA279AF15700F92C76 /* Easy HabitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Easy HabitUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		897565CE279AF15700F92C76 /* Easy_HabitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Easy_HabitUITests.swift; sourceTree = "<group>"; };
+		897565D0279AF15700F92C76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		897A3CFE279D86090032AD78 /* LocalFilesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFilesManager.swift; sourceTree = "<group>"; };
+		897A3D03279DA57F0032AD78 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		8983E10A279E85D20033B76F /* UserInputValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInputValidator.swift; sourceTree = "<group>"; };
+		8984DB82279C019200A92841 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
+		8984DB8F279C141200A92841 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		8984DBAC279C96F900A92841 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		8984DBBA279C9F5600A92841 /* DayMood.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DayMood.storyboard; sourceTree = "<group>"; };
+		8984DBC2279CABF400A92841 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		8984DBC7279CB60C00A92841 /* DayMoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayMoodViewController.swift; sourceTree = "<group>"; };
+		89B5856427A12F6A00002148 /* JournalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalViewController.swift; sourceTree = "<group>"; };
+		89B5857027A13ACD00002148 /* JournalDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalDetailViewController.swift; sourceTree = "<group>"; };
+		89B5858127A1442800002148 /* JournalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalCollectionViewCell.swift; sourceTree = "<group>"; };
+		89B5858227A1442800002148 /* JournalCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JournalCollectionViewCell.xib; sourceTree = "<group>"; };
+		9718EEBCFA61BA841B338AF6 /* Pods_Easy_HabitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Easy_HabitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AB1DCBF907210549103F412 /* Pods-Easy Habit-Easy HabitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easy Habit-Easy HabitUITests.debug.xcconfig"; path = "Target Support Files/Pods-Easy Habit-Easy HabitUITests/Pods-Easy Habit-Easy HabitUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9E78E79AB6407DF6DB55E46E /* Pods-Easy Habit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easy Habit.debug.xcconfig"; path = "Target Support Files/Pods-Easy Habit/Pods-Easy Habit.debug.xcconfig"; sourceTree = "<group>"; };
+		D538CE11852D68A274556BB3 /* Pods-Easy Habit-Easy HabitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easy Habit-Easy HabitUITests.release.xcconfig"; path = "Target Support Files/Pods-Easy Habit-Easy HabitUITests/Pods-Easy Habit-Easy HabitUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F65A938A57A2D541B05534F9 /* Pods_Easy_Habit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Easy_Habit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		897565A3279AF15300F92C76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF325CB6CA93438AF4570972 /* Pods_Easy_Habit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		897565BC279AF15700F92C76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C11478D8BB557FBF7142D28D /* Pods_Easy_HabitTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		897565C7279AF15700F92C76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5964583B10E4F611C23892F6 /* Pods_Easy_Habit_Easy_HabitUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00AE82ABC51AB3ADD10D1A71 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E78E79AB6407DF6DB55E46E /* Pods-Easy Habit.debug.xcconfig */,
+				40609180661F7485271010C9 /* Pods-Easy Habit.release.xcconfig */,
+				9AB1DCBF907210549103F412 /* Pods-Easy Habit-Easy HabitUITests.debug.xcconfig */,
+				D538CE11852D68A274556BB3 /* Pods-Easy Habit-Easy HabitUITests.release.xcconfig */,
+				15726908CAB9898951460943 /* Pods-Easy HabitTests.debug.xcconfig */,
+				0054D388C547A522D8A39950 /* Pods-Easy HabitTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		69C1759943B766BC3707F7FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F65A938A57A2D541B05534F9 /* Pods_Easy_Habit.framework */,
+				6FD4AA751956D2399BED6AEE /* Pods_Easy_Habit_Easy_HabitUITests.framework */,
+				9718EEBCFA61BA841B338AF6 /* Pods_Easy_HabitTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8975659D279AF15300F92C76 = {
+			isa = PBXGroup;
+			children = (
+				897565A8279AF15300F92C76 /* Easy Habit */,
+				897565C2279AF15700F92C76 /* Easy HabitTests */,
+				897565CD279AF15700F92C76 /* Easy HabitUITests */,
+				897565A7279AF15300F92C76 /* Products */,
+				00AE82ABC51AB3ADD10D1A71 /* Pods */,
+				69C1759943B766BC3707F7FB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		897565A7279AF15300F92C76 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				897565A6279AF15300F92C76 /* Easy Habit.app */,
+				897565BF279AF15700F92C76 /* Easy HabitTests.xctest */,
+				897565CA279AF15700F92C76 /* Easy HabitUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		897565A8279AF15300F92C76 /* Easy Habit */ = {
+			isa = PBXGroup;
+			children = (
+				8984DBB7279C9ECE00A92841 /* Storyboards */,
+				8984DBA2279C72D500A92841 /* Utilities */,
+				8984DBA1279C72C500A92841 /* Managers */,
+				8984DB77279BFA3800A92841 /* Model */,
+				8984DB78279BFA4300A92841 /* Views */,
+				8984DB76279BFA2D00A92841 /* Controllers */,
+				897565A9279AF15300F92C76 /* AppDelegate.swift */,
+				897565AB279AF15300F92C76 /* SceneDelegate.swift */,
+				897565AF279AF15400F92C76 /* Main.storyboard */,
+				897565B5279AF15700F92C76 /* Assets.xcassets */,
+				897565B7279AF15700F92C76 /* LaunchScreen.storyboard */,
+				897565BA279AF15700F92C76 /* Info.plist */,
+				897565B2279AF15400F92C76 /* Easy_Habit.xcdatamodeld */,
+			);
+			path = "Easy Habit";
+			sourceTree = "<group>";
+		};
+		897565C2279AF15700F92C76 /* Easy HabitTests */ = {
+			isa = PBXGroup;
+			children = (
+				897565C3279AF15700F92C76 /* Easy_HabitTests.swift */,
+				897565C5279AF15700F92C76 /* Info.plist */,
+			);
+			path = "Easy HabitTests";
+			sourceTree = "<group>";
+		};
+		897565CD279AF15700F92C76 /* Easy HabitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				897565CE279AF15700F92C76 /* Easy_HabitUITests.swift */,
+				897565D0279AF15700F92C76 /* Info.plist */,
+			);
+			path = "Easy HabitUITests";
+			sourceTree = "<group>";
+		};
+		8984DB76279BFA2D00A92841 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8984DB82279C019200A92841 /* UserInfoViewController.swift */,
+				8984DBC7279CB60C00A92841 /* DayMoodViewController.swift */,
+				896B677A279EF2760071B2CE /* GalleryViewController.swift */,
+				8971B0D527A6DDDC009E2BE9 /* GalleryFilterViewController.swift */,
+				89281480279FC3DE00C130D7 /* GalleryDetailViewController.swift */,
+				896B678F279EFF7A0071B2CE /* HabitListViewController.swift */,
+				893E0B2B27A2DE5100DF5980 /* HabitChoiceViewController.swift */,
+				893E0B4A27A30CB100DF5980 /* HabitAddEditVC.swift */,
+				89553FC927A00E5700385CD4 /* NewsViewController.swift */,
+				89553FCE27A00EF600385CD4 /* NewsDetailViewController.swift */,
+				89B5856427A12F6A00002148 /* JournalViewController.swift */,
+				8971B0DD27A71A46009E2BE9 /* JournalFilterViewController.swift */,
+				89B5857027A13ACD00002148 /* JournalDetailViewController.swift */,
+				891388D527A1642400E18767 /* JournalCreateViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8984DB77279BFA3800A92841 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				89F4110327A4152800BD1F35 /* CoreData */,
+				8984DB8F279C141200A92841 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8984DB78279BFA4300A92841 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				896B6785279EF5110071B2CE /* GalleryCollectionViewCell.swift */,
+				896B6786279EF5110071B2CE /* GalleryCollectionViewCell.xib */,
+				89553FE327A0180A00385CD4 /* NewsTVCell.swift */,
+				89553FE427A0180A00385CD4 /* NewsTVCell.xib */,
+				89553FEA27A0218500385CD4 /* NewsCVCell.swift */,
+				89553FEB27A0218500385CD4 /* NewsCVCell.xib */,
+				89B5858127A1442800002148 /* JournalCollectionViewCell.swift */,
+				89B5858227A1442800002148 /* JournalCollectionViewCell.xib */,
+				893E0B3D27A2E84100DF5980 /* HabitChoiceCVCell.swift */,
+				893E0B3E27A2E84100DF5980 /* HabitChoiceCVCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8984DBA1279C72C500A92841 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				8984DBAC279C96F900A92841 /* UserDefaultsManager.swift */,
+				897A3CFE279D86090032AD78 /* LocalFilesManager.swift */,
+				897A3D03279DA57F0032AD78 /* CoreDataManager.swift */,
+				89553FD327A0148200385CD4 /* APICaller.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		8984DBA2279C72D500A92841 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8984DBC2279CABF400A92841 /* Utils.swift */,
+				8983E10A279E85D20033B76F /* UserInputValidator.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		8984DBB7279C9ECE00A92841 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8984DBBA279C9F5600A92841 /* DayMood.storyboard */,
+				896B6760279ECDED0071B2CE /* HabitList.storyboard */,
+				896B676F279ECED50071B2CE /* Gallery.storyboard */,
+				896B6765279ECE3B0071B2CE /* Journal.storyboard */,
+				896B676A279ECE460071B2CE /* News.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		89F4110327A4152800BD1F35 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				891AC89C27A441A2001ECD15 /* JournalEntry+CoreDataClass.swift */,
+				891AC89D27A441A2001ECD15 /* JournalEntry+CoreDataProperties.swift */,
+				891AC89E27A441A2001ECD15 /* Habit+CoreDataClass.swift */,
+				891AC89F27A441A2001ECD15 /* Habit+CoreDataProperties.swift */,
+				891AC8A027A441A2001ECD15 /* DailyMoodEntry+CoreDataClass.swift */,
+				891AC8A127A441A2001ECD15 /* DailyMoodEntry+CoreDataProperties.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		897565A5279AF15300F92C76 /* Easy Habit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 897565D3279AF15700F92C76 /* Build configuration list for PBXNativeTarget "Easy Habit" */;
+			buildPhases = (
+				9B5B6059985400890E575A22 /* [CP] Check Pods Manifest.lock */,
+				897565A2279AF15300F92C76 /* Sources */,
+				897565A3279AF15300F92C76 /* Frameworks */,
+				897565A4279AF15300F92C76 /* Resources */,
+				81164FDDF8EBA59611C6CA68 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Easy Habit";
+			productName = "Easy Habit";
+			productReference = 897565A6279AF15300F92C76 /* Easy Habit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		897565BE279AF15700F92C76 /* Easy HabitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 897565D6279AF15700F92C76 /* Build configuration list for PBXNativeTarget "Easy HabitTests" */;
+			buildPhases = (
+				85CFB739F5D181B994F04928 /* [CP] Check Pods Manifest.lock */,
+				897565BB279AF15700F92C76 /* Sources */,
+				897565BC279AF15700F92C76 /* Frameworks */,
+				897565BD279AF15700F92C76 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				897565C1279AF15700F92C76 /* PBXTargetDependency */,
+			);
+			name = "Easy HabitTests";
+			productName = "Easy HabitTests";
+			productReference = 897565BF279AF15700F92C76 /* Easy HabitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		897565C9279AF15700F92C76 /* Easy HabitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 897565D9279AF15700F92C76 /* Build configuration list for PBXNativeTarget "Easy HabitUITests" */;
+			buildPhases = (
+				19991D17D4DC3CCA966A8264 /* [CP] Check Pods Manifest.lock */,
+				897565C6279AF15700F92C76 /* Sources */,
+				897565C7279AF15700F92C76 /* Frameworks */,
+				897565C8279AF15700F92C76 /* Resources */,
+				A8C96E67E07990725985F33A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				897565CC279AF15700F92C76 /* PBXTargetDependency */,
+			);
+			name = "Easy HabitUITests";
+			productName = "Easy HabitUITests";
+			productReference = 897565CA279AF15700F92C76 /* Easy HabitUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8975659E279AF15300F92C76 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					897565A5279AF15300F92C76 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					897565BE279AF15700F92C76 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 897565A5279AF15300F92C76;
+					};
+					897565C9279AF15700F92C76 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 897565A5279AF15300F92C76;
+					};
+				};
+			};
+			buildConfigurationList = 897565A1279AF15300F92C76 /* Build configuration list for PBXProject "Easy Habit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8975659D279AF15300F92C76;
+			productRefGroup = 897565A7279AF15300F92C76 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				897565A5279AF15300F92C76 /* Easy Habit */,
+				897565BE279AF15700F92C76 /* Easy HabitTests */,
+				897565C9279AF15700F92C76 /* Easy HabitUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		897565A4279AF15300F92C76 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89B5858427A1442800002148 /* JournalCollectionViewCell.xib in Resources */,
+				897565B9279AF15700F92C76 /* LaunchScreen.storyboard in Resources */,
+				896B6770279ECED50071B2CE /* Gallery.storyboard in Resources */,
+				897565B6279AF15700F92C76 /* Assets.xcassets in Resources */,
+				896B6766279ECE3B0071B2CE /* Journal.storyboard in Resources */,
+				896B6761279ECDED0071B2CE /* HabitList.storyboard in Resources */,
+				893E0B4027A2E84100DF5980 /* HabitChoiceCVCell.xib in Resources */,
+				896B676B279ECE460071B2CE /* News.storyboard in Resources */,
+				8984DBBB279C9F5600A92841 /* DayMood.storyboard in Resources */,
+				896B6788279EF5110071B2CE /* GalleryCollectionViewCell.xib in Resources */,
+				89553FED27A0218500385CD4 /* NewsCVCell.xib in Resources */,
+				89553FE627A0180A00385CD4 /* NewsTVCell.xib in Resources */,
+				897565B1279AF15400F92C76 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		897565BD279AF15700F92C76 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		897565C8279AF15700F92C76 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19991D17D4DC3CCA966A8264 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Easy Habit-Easy HabitUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81164FDDF8EBA59611C6CA68 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Easy Habit/Pods-Easy Habit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Easy Habit/Pods-Easy Habit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Easy Habit/Pods-Easy Habit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85CFB739F5D181B994F04928 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Easy HabitTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B5B6059985400890E575A22 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Easy Habit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8C96E67E07990725985F33A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Easy Habit-Easy HabitUITests/Pods-Easy Habit-Easy HabitUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Easy Habit-Easy HabitUITests/Pods-Easy Habit-Easy HabitUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Easy Habit-Easy HabitUITests/Pods-Easy Habit-Easy HabitUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		897565A2279AF15300F92C76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8984DB90279C141200A92841 /* Model.swift in Sources */,
+				896B6787279EF5110071B2CE /* GalleryCollectionViewCell.swift in Sources */,
+				896B677B279EF2760071B2CE /* GalleryViewController.swift in Sources */,
+				89B5857127A13ACD00002148 /* JournalDetailViewController.swift in Sources */,
+				897A3CFF279D86090032AD78 /* LocalFilesManager.swift in Sources */,
+				89553FCF27A00EF600385CD4 /* NewsDetailViewController.swift in Sources */,
+				891388D627A1642400E18767 /* JournalCreateViewController.swift in Sources */,
+				89281481279FC3DE00C130D7 /* GalleryDetailViewController.swift in Sources */,
+				89553FE527A0180A00385CD4 /* NewsTVCell.swift in Sources */,
+				891AC8A627A441A2001ECD15 /* DailyMoodEntry+CoreDataClass.swift in Sources */,
+				897565B4279AF15400F92C76 /* Easy_Habit.xcdatamodeld in Sources */,
+				89553FEC27A0218500385CD4 /* NewsCVCell.swift in Sources */,
+				8984DBC8279CB60C00A92841 /* DayMoodViewController.swift in Sources */,
+				89553FCA27A00E5700385CD4 /* NewsViewController.swift in Sources */,
+				89553FD427A0148200385CD4 /* APICaller.swift in Sources */,
+				8971B0DE27A71A46009E2BE9 /* JournalFilterViewController.swift in Sources */,
+				891AC8A327A441A2001ECD15 /* JournalEntry+CoreDataProperties.swift in Sources */,
+				8984DBAD279C96F900A92841 /* UserDefaultsManager.swift in Sources */,
+				8971B0D627A6DDDC009E2BE9 /* GalleryFilterViewController.swift in Sources */,
+				8984DBC3279CABF400A92841 /* Utils.swift in Sources */,
+				89B5856527A12F6A00002148 /* JournalViewController.swift in Sources */,
+				893E0B2C27A2DE5100DF5980 /* HabitChoiceViewController.swift in Sources */,
+				891AC8A527A441A2001ECD15 /* Habit+CoreDataProperties.swift in Sources */,
+				8984DB83279C019200A92841 /* UserInfoViewController.swift in Sources */,
+				897565AA279AF15300F92C76 /* AppDelegate.swift in Sources */,
+				891AC8A727A441A2001ECD15 /* DailyMoodEntry+CoreDataProperties.swift in Sources */,
+				891AC8A227A441A2001ECD15 /* JournalEntry+CoreDataClass.swift in Sources */,
+				896B6790279EFF7A0071B2CE /* HabitListViewController.swift in Sources */,
+				897A3D04279DA57F0032AD78 /* CoreDataManager.swift in Sources */,
+				891AC8A427A441A2001ECD15 /* Habit+CoreDataClass.swift in Sources */,
+				897565AC279AF15300F92C76 /* SceneDelegate.swift in Sources */,
+				8983E10B279E85D20033B76F /* UserInputValidator.swift in Sources */,
+				893E0B3F27A2E84100DF5980 /* HabitChoiceCVCell.swift in Sources */,
+				893E0B4B27A30CB100DF5980 /* HabitAddEditVC.swift in Sources */,
+				89B5858327A1442800002148 /* JournalCollectionViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		897565BB279AF15700F92C76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				897565C4279AF15700F92C76 /* Easy_HabitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		897565C6279AF15700F92C76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				897565CF279AF15700F92C76 /* Easy_HabitUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		897565C1279AF15700F92C76 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 897565A5279AF15300F92C76 /* Easy Habit */;
+			targetProxy = 897565C0279AF15700F92C76 /* PBXContainerItemProxy */;
+		};
+		897565CC279AF15700F92C76 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 897565A5279AF15300F92C76 /* Easy Habit */;
+			targetProxy = 897565CB279AF15700F92C76 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		897565AF279AF15400F92C76 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				897565B0279AF15400F92C76 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		897565B7279AF15700F92C76 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				897565B8279AF15700F92C76 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		897565D1279AF15700F92C76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		897565D2279AF15700F92C76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		897565D4279AF15700F92C76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E78E79AB6407DF6DB55E46E /* Pods-Easy Habit.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Easy Habit/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "BJIT-group.Easy-Habit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		897565D5279AF15700F92C76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40609180661F7485271010C9 /* Pods-Easy Habit.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Easy Habit/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "BJIT-group.Easy-Habit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		897565D7279AF15700F92C76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15726908CAB9898951460943 /* Pods-Easy HabitTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Easy HabitTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "BJIT-group.Easy-HabitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Easy Habit.app/Easy Habit";
+			};
+			name = Debug;
+		};
+		897565D8279AF15700F92C76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0054D388C547A522D8A39950 /* Pods-Easy HabitTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Easy HabitTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "BJIT-group.Easy-HabitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Easy Habit.app/Easy Habit";
+			};
+			name = Release;
+		};
+		897565DA279AF15700F92C76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AB1DCBF907210549103F412 /* Pods-Easy Habit-Easy HabitUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Easy HabitUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "BJIT-group.Easy-HabitUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Easy Habit";
+			};
+			name = Debug;
+		};
+		897565DB279AF15700F92C76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D538CE11852D68A274556BB3 /* Pods-Easy Habit-Easy HabitUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Easy HabitUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "BJIT-group.Easy-HabitUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Easy Habit";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		897565A1279AF15300F92C76 /* Build configuration list for PBXProject "Easy Habit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				897565D1279AF15700F92C76 /* Debug */,
+				897565D2279AF15700F92C76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		897565D3279AF15700F92C76 /* Build configuration list for PBXNativeTarget "Easy Habit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				897565D4279AF15700F92C76 /* Debug */,
+				897565D5279AF15700F92C76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		897565D6279AF15700F92C76 /* Build configuration list for PBXNativeTarget "Easy HabitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				897565D7279AF15700F92C76 /* Debug */,
+				897565D8279AF15700F92C76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		897565D9279AF15700F92C76 /* Build configuration list for PBXNativeTarget "Easy HabitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				897565DA279AF15700F92C76 /* Debug */,
+				897565DB279AF15700F92C76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		897565B2279AF15400F92C76 /* Easy_Habit.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				897565B3279AF15400F92C76 /* Easy_Habit.xcdatamodel */,
+			);
+			currentVersion = 897565B3279AF15400F92C76 /* Easy_Habit.xcdatamodel */;
+			path = Easy_Habit.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8975659E279AF15300F92C76 /* Project object */;
+}

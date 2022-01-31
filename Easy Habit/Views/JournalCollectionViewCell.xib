@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="JournalCollectionViewCell" customModule="Easy_Habit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="243" height="180"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="243" height="180"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sampleCVCellImg" translatesAutoresizingMaskIntoConstraints="NO" id="nUZ-ca-7iS">
+                        <rect key="frame" x="0.0" y="0.0" width="243" height="180"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Journal Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tN3-U5-QhK">
+                        <rect key="frame" x="18" y="144" width="207" height="18"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Journal Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ar0-nB-8wH">
+                        <rect key="frame" x="18" y="125.5" width="207" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="tN3-U5-QhK" secondAttribute="trailing" constant="18" id="5Qn-CY-rWs"/>
+                <constraint firstItem="tN3-U5-QhK" firstAttribute="top" secondItem="Ar0-nB-8wH" secondAttribute="bottom" constant="4" id="8gB-XV-9Ny"/>
+                <constraint firstItem="Ar0-nB-8wH" firstAttribute="trailing" secondItem="tN3-U5-QhK" secondAttribute="trailing" id="Rrh-pM-T3Z"/>
+                <constraint firstAttribute="bottom" secondItem="tN3-U5-QhK" secondAttribute="bottom" constant="18" id="SDN-R2-r54"/>
+                <constraint firstAttribute="bottom" secondItem="nUZ-ca-7iS" secondAttribute="bottom" id="cXz-Im-ZLg"/>
+                <constraint firstAttribute="trailing" secondItem="nUZ-ca-7iS" secondAttribute="trailing" id="gVv-hQ-gfw"/>
+                <constraint firstItem="Ar0-nB-8wH" firstAttribute="leading" secondItem="tN3-U5-QhK" secondAttribute="leading" id="iAw-61-DiL"/>
+                <constraint firstItem="nUZ-ca-7iS" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="m0f-Gp-Vn1"/>
+                <constraint firstItem="nUZ-ca-7iS" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="vQg-GW-52A"/>
+                <constraint firstItem="tN3-U5-QhK" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="18" id="yTN-qm-wz4"/>
+            </constraints>
+            <size key="customSize" width="243" height="180"/>
+            <connections>
+                <outlet property="journalCellDateLabel" destination="Ar0-nB-8wH" id="aes-27-aX4"/>
+                <outlet property="journalCellImage" destination="nUZ-ca-7iS" id="2ce-S3-61j"/>
+                <outlet property="journalCellTitleLabel" destination="tN3-U5-QhK" id="xyp-It-Sg0"/>
+            </connections>
+            <point key="canvasLocation" x="-141.30434782608697" y="93.75"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="sampleCVCellImg" width="296" height="181"/>
+    </resources>
+</document>

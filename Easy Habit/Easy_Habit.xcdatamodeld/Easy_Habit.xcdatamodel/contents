@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20D91" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="DailyMoodEntry" representedClassName="DailyMoodEntry" syncable="YES">
+        <attribute name="comment" optional="YES" attributeType="String"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="imageID" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Habit" representedClassName="Habit" syncable="YES">
+        <attribute name="amount" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="btnImgID" optional="YES" attributeType="String"/>
+        <attribute name="days" optional="YES" attributeType="Transformable" customClassName="[Bool]"/>
+        <attribute name="habitID" optional="YES" attributeType="String"/>
+        <attribute name="imageID" optional="YES" attributeType="String"/>
+        <attribute name="isActive" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isCustom" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="serial" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="setReminder" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="startDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="time" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="unit" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="JournalEntry" representedClassName="JournalEntry" syncable="YES">
+        <attribute name="coverImgID" optional="YES" attributeType="String"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="details" optional="YES" attributeType="String"/>
+        <attribute name="mood" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="DailyMoodEntry" positionX="-121.0526733398438" positionY="-107.6547546386719" width="128" height="74"/>
+        <element name="Habit" positionX="-54" positionY="45" width="128" height="224"/>
+        <element name="JournalEntry" positionX="-316.1182861328125" positionY="17.43502807617188" width="128" height="104"/>
+    </elements>
+</model>

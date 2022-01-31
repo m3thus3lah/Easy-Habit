@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="newsTVCell" rowHeight="96" id="AVU-CQ-vxf" customClass="NewsTVCell" customModule="Easy_Habit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="394" height="96"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AVU-CQ-vxf" id="Fdw-Od-apA">
+                <rect key="frame" x="0.0" y="0.0" width="394" height="96"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Pb-4Z-R1s" userLabel="Headline label">
+                        <rect key="frame" x="93" y="10" width="291" height="58"/>
+                        <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</string>
+                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="16"/>
+                        <color key="textColor" red="0.27058823529999998" green="0.37254901959999998" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageNotFound" translatesAutoresizingMaskIntoConstraints="NO" id="KnL-TM-4RB" userLabel="TVCell image">
+                        <rect key="frame" x="0.0" y="16" width="75" height="75"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="75" id="UQN-N8-R3m"/>
+                            <constraint firstAttribute="height" constant="75" id="nkJ-UV-rCf"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="01 May, 2021 by John Doe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65w-tH-Lo6" userLabel="Date label">
+                        <rect key="frame" x="93" y="72" width="154.5" height="15"/>
+                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="13"/>
+                        <color key="textColor" red="0.27058823529999998" green="0.37254901959999998" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="0Pb-4Z-R1s" firstAttribute="leading" secondItem="KnL-TM-4RB" secondAttribute="trailing" constant="18" id="0CE-VC-N0I"/>
+                    <constraint firstItem="KnL-TM-4RB" firstAttribute="top" secondItem="0Pb-4Z-R1s" secondAttribute="top" constant="6" id="71b-kM-eHE"/>
+                    <constraint firstAttribute="trailing" secondItem="0Pb-4Z-R1s" secondAttribute="trailing" constant="10" id="9Yb-bj-TGl"/>
+                    <constraint firstItem="65w-tH-Lo6" firstAttribute="leading" secondItem="0Pb-4Z-R1s" secondAttribute="leading" id="BON-6X-sjU"/>
+                    <constraint firstItem="65w-tH-Lo6" firstAttribute="top" secondItem="0Pb-4Z-R1s" secondAttribute="bottom" constant="4" id="P4r-KB-Yp9"/>
+                    <constraint firstItem="0Pb-4Z-R1s" firstAttribute="top" secondItem="Fdw-Od-apA" secondAttribute="top" constant="10" id="P9g-PK-G3h"/>
+                    <constraint firstItem="KnL-TM-4RB" firstAttribute="leading" secondItem="Fdw-Od-apA" secondAttribute="leading" id="TU4-RS-h2c"/>
+                    <constraint firstAttribute="trailing" secondItem="0Pb-4Z-R1s" secondAttribute="trailing" constant="10" id="pSf-lX-jRo"/>
+                    <constraint firstAttribute="bottom" secondItem="0Pb-4Z-R1s" secondAttribute="bottom" constant="28" id="qWk-PG-FYG"/>
+                    <constraint firstAttribute="top" secondItem="0Pb-4Z-R1s" secondAttribute="bottom" constant="-68" id="rq5-CX-s4P"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="o7N-HL-L65"/>
+            <connections>
+                <outlet property="tvCellDate" destination="65w-tH-Lo6" id="hqn-9Z-9qN"/>
+                <outlet property="tvCellImage" destination="KnL-TM-4RB" id="1ZX-LF-aaz"/>
+                <outlet property="tvCellheadline" destination="0Pb-4Z-R1s" id="mT3-7T-Dqu"/>
+            </connections>
+            <point key="canvasLocation" x="23" y="133"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="imageNotFound" width="240" height="240"/>
+    </resources>
+</document>

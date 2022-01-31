@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HabitChoiceCVCell" customModule="Easy_Habit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="154" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="154" height="120"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xvr-ti-Xga" customClass="RoundEdgedView" customModule="Easy_Habit" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="154" height="120"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="habitWalk" translatesAutoresizingMaskIntoConstraints="NO" id="6nw-ZR-l5H">
+                                <rect key="frame" x="49.5" y="16" width="55" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="qtI-2R-dYJ"/>
+                                    <constraint firstAttribute="height" constant="55" id="rRb-OO-9Qp"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Walking" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="keg-eE-pCK">
+                                <rect key="frame" x="50" y="81" width="54" height="19"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.14350691439999999" green="0.2952017784" blue="0.41962429880000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fWF-cL-CVW" customClass="CircularView" customModule="Easy_Habit" customModuleProvider="target">
+                                <rect key="frame" x="104" y="10" width="40" height="40"/>
+                                <subviews>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l1b-1m-S71">
+                                        <rect key="frame" x="14.5" y="9.5" width="11" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.29806697370000002" green="0.55997866389999995" blue="0.90200072529999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="C5e-uc-Rw9"/>
+                                    <constraint firstItem="l1b-1m-S71" firstAttribute="centerY" secondItem="fWF-cL-CVW" secondAttribute="centerY" id="PhT-ER-4rJ"/>
+                                    <constraint firstAttribute="height" constant="40" id="hTQ-hG-QpR"/>
+                                    <constraint firstItem="l1b-1m-S71" firstAttribute="centerX" secondItem="fWF-cL-CVW" secondAttribute="centerX" id="kEq-yU-jUQ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97263664009999995" green="0.9723944068" blue="0.98039394619999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="fWF-cL-CVW" firstAttribute="top" secondItem="xvr-ti-Xga" secondAttribute="top" constant="10" id="0UU-WO-okb"/>
+                            <constraint firstItem="keg-eE-pCK" firstAttribute="centerX" secondItem="xvr-ti-Xga" secondAttribute="centerX" id="0k6-kp-QAT"/>
+                            <constraint firstItem="keg-eE-pCK" firstAttribute="top" secondItem="6nw-ZR-l5H" secondAttribute="bottom" constant="10" id="163-LR-CP4"/>
+                            <constraint firstAttribute="bottom" secondItem="keg-eE-pCK" secondAttribute="bottom" constant="20" id="2jm-6A-nd5"/>
+                            <constraint firstAttribute="trailing" secondItem="fWF-cL-CVW" secondAttribute="trailing" constant="10" id="X46-jQ-l6I"/>
+                            <constraint firstItem="6nw-ZR-l5H" firstAttribute="centerX" secondItem="xvr-ti-Xga" secondAttribute="centerX" id="eq7-ma-MBb"/>
+                            <constraint firstItem="6nw-ZR-l5H" firstAttribute="top" secondItem="xvr-ti-Xga" secondAttribute="top" constant="16" id="nXw-Qe-BlD"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="xvr-ti-Xga" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="1L0-rg-HHk"/>
+                <constraint firstAttribute="trailing" secondItem="xvr-ti-Xga" secondAttribute="trailing" id="Nd7-E1-04d"/>
+                <constraint firstItem="xvr-ti-Xga" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Vh4-Hs-4Wr"/>
+                <constraint firstAttribute="bottom" secondItem="xvr-ti-Xga" secondAttribute="bottom" id="YiQ-ZE-iEr"/>
+            </constraints>
+            <size key="customSize" width="154" height="120"/>
+            <connections>
+                <outlet property="habitChoiceCellBG" destination="xvr-ti-Xga" id="owH-Y6-TH3"/>
+                <outlet property="habitChoiceCellImage" destination="6nw-ZR-l5H" id="Pj2-at-cf7"/>
+                <outlet property="habitChoiceCellLabel" destination="keg-eE-pCK" id="Y9d-bJ-uO4"/>
+                <outlet property="habitSelectedBG" destination="fWF-cL-CVW" id="a5D-E5-6Hg"/>
+                <outlet property="habitSelectedNum" destination="l1b-1m-S71" id="9gL-4I-7aj"/>
+            </connections>
+            <point key="canvasLocation" x="66.666666666666671" y="113.83928571428571"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="habitWalk" width="20" height="32"/>
+    </resources>
+</document>
